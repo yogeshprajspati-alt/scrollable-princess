@@ -36,7 +36,9 @@ export function SystemsNominal() {
               I hope you know that you are the bravest of the brave, the one and only Prachiiiee.
               Fear nothing, for you have everything within you to succeed. Go with the flow and enjoy every moment of your radiant journey!
               The reason I said you are a princess and not a queen is that, a queen can have limitations, but a princess can do anything and everything she wants, literally anything. Queens are tough but princesses are soft and pretty.
+              Also Whenever I see you, rupanzel yaad aajati h, bholi bhali, badmash/shaitaan, khoobsurat, sb kuch ek sath.
               Khushhhhhhhhhhhhhhhhh Ab bohot acche se exam dena, sab accha hota h jab aapka mn khush hota h. Bhaad me jaaye sab, bas khush raho tum.
+
             </p>
           </AnimatedItem>
           <AnimatedItem>
