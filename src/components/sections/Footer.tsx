@@ -24,19 +24,19 @@ export function Footer() {
 
           <nav className="grid grid-cols-2 gap-x-10 gap-y-3 md:grid-cols-3">
             {[
-              ["Mark I", "Cave, Afghanistan"],
-              ["Mark III", "Monaco Circuit"],
-              ["Mark VII", "Stark Tower"],
-              ["Mark XLIV", "Hulkbuster"],
-              ["Mark L", "Titan"],
-              ["Mark LXXXV", "Endgame"],
+              ["Kind Heart", "Pure Gold"],
+              ["Sharp Mind", "Brilliant"],
+              ["Brave Soul", "Warrior"],
+              ["Pure Grace", "Radiant"],
+              ["True Friend", "Reliable"],
+              ["Infinite Potential", "Unstoppable"],
             ].map(([name, note]) => (
               <a
                 key={name}
                 href="#"
                 className="group flex flex-col gap-1"
               >
-                <span className="font-sans text-[13px] font-medium text-foreground transition-colors group-hover:text-accent">
+                <span className="font-serif text-[13px] font-medium italic text-foreground transition-colors group-hover:text-accent">
                   {name}
                   <ArrowUpRight
                     size={11}
@@ -44,7 +44,7 @@ export function Footer() {
                     className="ml-1 inline-block align-baseline opacity-0 transition-opacity group-hover:opacity-100"
                   />
                 </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+                <span className="font-sans text-[10px] uppercase tracking-[0.24em] text-zinc-500">
                   {note}
                 </span>
               </a>
@@ -52,9 +52,9 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-white/5 pt-6 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:flex-row md:items-center md:justify-between">
-          <span>Build 2026.04.21 &nbsp;&middot;&nbsp; Mark LXXXV &nbsp;&middot;&nbsp; J.A.R.V.I.S. Online</span>
-          <span>Proof of concept &mdash;Prachiiiee is a PEARL 🫧🦪</span>
+        <div className="flex flex-col gap-2 border-t border-white/5 pt-6 font-sans text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:flex-row md:items-center md:justify-between">
+          <span>Build 2026.05.02 &nbsp;&middot;&nbsp; Protocol Alpha &nbsp;&middot;&nbsp; Radiant Status</span>
+          <span>Proof of concept &mdash; Prachiiiee is a PEARL 🫧🦪</span>
         </div>
       </div>
     </footer>

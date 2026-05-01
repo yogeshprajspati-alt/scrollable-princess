@@ -162,7 +162,7 @@ export function BackgroundMusic({
   }, [isMuted]);
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex justify-end px-4">
+    <div className="pointer-events-none fixed inset-x-0 bottom-6 z-50 flex justify-end px-6 md:px-12">
       <button
         type="button"
         disabled={!isSrcAvailable}
@@ -173,7 +173,7 @@ export function BackgroundMusic({
               ? "Unmute background music"
               : "Mute background music"
         }
-        className="pointer-events-auto select-none rounded-full border border-white/20 bg-black/50 px-3 py-2 text-sm font-medium text-white shadow-sm backdrop-blur hover:bg-black/60 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
+        className="pointer-events-auto group relative flex items-center gap-3 select-none rounded-full border border-white/10 bg-black/40 px-5 py-2.5 font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-white shadow-2xl backdrop-blur-xl transition-all duration-300 hover:bg-black/60 hover:border-accent/30 active:scale-[0.96] disabled:cursor-not-allowed disabled:opacity-50"
         onClick={() => {
           if (!isSrcAvailable) return;
 
@@ -184,26 +184,21 @@ export function BackgroundMusic({
           if (!startedRef.current || !el) return;
 
           if (!nextMuted) {
-            // Unmuting after start: try to resume.
             try {
-              void el.play().catch(() => {
-                // ignore
-              });
-            } catch {
-              // ignore
-            }
+              void el.play().catch(() => {});
+            } catch {}
           } else {
-            // Muting: pause to prevent audible sound.
             try {
               el.pause();
-            } catch {
-              // ignore
-            }
+            } catch {}
             stopAndReset();
           }
         }}
       >
-        {!isSrcAvailable ? "🎵 Music Unavailable" : isMuted ? "🔇 Music Off" : "🔊 Music On"}
+        <span className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${isMuted ? "bg-zinc-500" : "bg-accent shadow-[0_0_8px_rgba(234,188,203,0.8)]"}`} />
+        <span className="opacity-80 group-hover:opacity-100 transition-opacity">
+          {!isSrcAvailable ? "Unavailable" : isMuted ? "Melody Off" : "Melody On"}
+        </span>
       </button>
     </div>
   );

@@ -202,16 +202,6 @@ export function Hero() {
         />
 
         <div className="pointer-events-none absolute left-6 top-24 text-accent md:left-10 md:top-28">
-          <HudFrame corner="tl" size={26} />
-        </div>
-        <div className="pointer-events-none absolute right-6 top-24 text-accent md:right-10 md:top-28">
-          <HudFrame corner="tr" size={26} />
-        </div>
-        <div className="pointer-events-none absolute bottom-14 left-6 text-accent md:bottom-16 md:left-10">
-          <HudFrame corner="bl" size={26} />
-        </div>
-        <div className="pointer-events-none absolute bottom-14 right-6 text-accent md:bottom-16 md:right-10">
-          <HudFrame corner="br" size={26} />
         </div>
 
         <div
@@ -219,15 +209,15 @@ export function Hero() {
           className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-start gap-5 px-6 pb-24 md:px-12 md:pb-28"
           style={{ transition: "opacity 80ms linear" }}
         >
-          <EyebrowBadge>PRACHIII // EXAM MODE // ONLINE</EyebrowBadge>
-          <h1 className="max-w-[18ch] font-sans text-5xl font-semibold leading-[0.95] tracking-tighter text-foreground md:text-7xl lg:text-8xl">
-            I am
+          <span className="font-serif italic text-accent tracking-wide text-sm md:text-base">Special Appreciation</span>
+          <h1 className="max-w-[18ch] font-serif text-5xl font-semibold leading-[0.95] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+            The One & Only
             <br />
             <span className="text-accent">Prachii.</span>
           </h1>
           <p className="max-w-[48ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
-            Prachii is built for progress. Calm mind. Quick recall. Scroll to run a full
-            system diagnostic — confidence is holding strong, Bcoz She is a brave Princess.
+            Graceful. Strong. Unstoppable. 
+            Scroll to explore the journey of a true princess — where every effort is a step toward greatness.
           </p>
         </div>
 
@@ -236,51 +226,50 @@ export function Hero() {
           className="pointer-events-none absolute bottom-24 left-6 z-10 hidden max-w-[58%] flex-col gap-5 md:flex md:bottom-28 md:left-12"
           style={{ opacity: 0, transition: "opacity 80ms linear" }}
         >
-          <span className="inline-flex items-center gap-2.5 font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
-            <span aria-hidden className="inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_10px_rgba(212,162,47,0.85)]" />
-            Protocol &mdash; Mk LXXXV
+          <span className="inline-flex items-center gap-2.5 font-serif italic text-sm tracking-wide text-accent">
+            Protocol &mdash; Pure Elegance
           </span>
-          <h2 className="font-sans font-semibold leading-[0.88] tracking-tighter text-foreground text-[clamp(4rem,9.5vw,9rem)]">
-            Built
+          <h2 className="font-serif font-semibold leading-[0.88] tracking-tight text-foreground text-[clamp(4rem,9.5vw,9rem)]">
+            Simply
             <br />
-            for <span className="text-accent">Prachii</span>
+            <span className="text-accent">Radiant</span>
           </h2>
-          <p className="max-w-[36ch] font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-400">
-            Consistency & practice, engineered for unstoppable results.
+          <p className="max-w-[36ch] font-sans text-[12px] uppercase tracking-[0.2em] text-zinc-400">
+            Consistency & belief, the core of her unstoppable spirit.
           </p>
         </div>
 
         <div className="pointer-events-none absolute left-6 top-20 z-10 flex items-center gap-2 md:left-10 md:top-24">
-          <div className="h-px w-8 bg-accent/60" />
-          <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-zinc-400">
-            Telemetry Link &mdash; Live
+          <div className="h-px w-8 bg-accent/40" />
+          <span className="font-sans text-[10px] uppercase tracking-[0.32em] text-zinc-500">
+            Current Vibe &mdash; Radiant
           </span>
         </div>
 
         <div className="pointer-events-none absolute right-6 top-20 z-10 flex items-center gap-3 md:right-10 md:top-24">
-          <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-zinc-400">
-            Arc Reactor
+          <span className="font-sans text-[10px] uppercase tracking-[0.32em] text-zinc-500">
+            Spirit Level
           </span>
           <span
             ref={powerReadoutRef}
-            className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent"
+            className="font-sans text-[10px] uppercase tracking-[0.22em] text-accent font-medium"
           >
-            87.3%
+            100%
           </span>
-          <span aria-hidden className="inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_10px_rgba(212,162,47,0.85)]" />
+          <span aria-hidden className="inline-block h-1.5 w-1.5 rounded-full bg-accent/80" />
         </div>
 
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10">
-          <div className="mx-6 mb-3 h-px bg-white/10 md:mx-10">
+          <div className="mx-6 mb-3 h-px bg-white/5 md:mx-10">
             <div
               ref={progressFillRef}
-              className="h-full origin-left bg-accent"
+              className="h-full origin-left bg-accent/60"
               style={{ transform: "scaleX(0)", transition: "transform 80ms linear" }}
             />
           </div>
-          <div className="mx-6 flex items-center justify-between pb-4 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
-            <span>SEQ 001 / 169</span>
-            <span>J.A.R.V.I.S. // DIAGNOSTIC</span>
+          <div className="mx-6 flex items-center justify-between pb-4 font-sans text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
+            <span>MOMENT {FRAME_COUNT}</span>
+            <span>Prachiiiee is a PEARL 🫧🦪</span>
             <span>Scroll &darr;</span>
           </div>
         </div>
@@ -299,16 +288,17 @@ export function Hero() {
               className={`pointer-events-none absolute ${position} z-20 hidden w-[420px] max-w-[90vw] md:block`}
             >
               <figure
-                className={`card-surface pointer-events-auto p-6 transition-all duration-400 ease-out ${
-                  visible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+                className={`card-surface pointer-events-auto p-8 transition-all duration-700 ease-out ${
+                  visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                 }`}
+                style={{ borderRadius: "24px", background: "rgba(255, 255, 255, 0.03)", border: "1px solid rgba(234, 188, 203, 0.1)" }}
               >
-                <blockquote className="font-sans text-xl font-medium leading-snug tracking-tight text-foreground">
+                <blockquote className="font-serif text-2xl font-medium leading-snug tracking-tight text-foreground italic">
                   &ldquo;{d.quote}&rdquo;
                 </blockquote>
-                <figcaption className="mt-4 flex items-center justify-between">
-                  <span className="font-sans text-sm text-zinc-300">{d.speaker}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-accent">
+                <figcaption className="mt-6 flex items-center justify-between">
+                  <span className="font-sans text-sm text-zinc-400">{d.speaker}</span>
+                  <span className="font-serif italic text-xs text-accent">
                     {d.film}
                   </span>
                 </figcaption>
@@ -317,26 +307,27 @@ export function Hero() {
           );
         })}
 
-        <div className="pointer-events-none absolute inset-x-0 top-[38%] z-20 flex flex-col gap-3 px-6 md:hidden">
+        <div className="pointer-events-none absolute inset-x-0 top-[38%] z-20 flex flex-col gap-4 px-6 md:hidden">
           {DIALOGUES.map((d) => {
             const visible = visibleCards.has(d.id);
             return (
               <figure
                 key={d.id}
-                className={`card-surface pointer-events-auto p-5 transition-all duration-400 ease-out ${
+                className={`card-surface pointer-events-auto p-6 transition-all duration-700 ease-out ${
                   visible
                     ? "translate-y-0 opacity-100"
-                    : "translate-y-4 opacity-0"
+                    : "translate-y-6 opacity-0"
                 }`}
+                style={{ borderRadius: "20px", background: "rgba(255, 255, 255, 0.03)", border: "1px solid rgba(234, 188, 203, 0.1)" }}
               >
-                <blockquote className="font-sans text-base font-medium leading-snug text-foreground">
+                <blockquote className="font-serif text-lg font-medium leading-snug text-foreground italic">
                   &ldquo;{d.quote}&rdquo;
                 </blockquote>
-                <figcaption className="mt-3 flex items-center justify-between">
-                  <span className="font-sans text-xs text-zinc-300">
+                <figcaption className="mt-4 flex items-center justify-between">
+                  <span className="font-sans text-xs text-zinc-400">
                     {d.speaker}
                   </span>
-                  <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-accent">
+                  <span className="font-serif italic text-[10px] text-accent">
                     {d.film}
                   </span>
                 </figcaption>
@@ -346,16 +337,16 @@ export function Hero() {
         </div>
 
         {!loaded && (
-          <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-5 bg-background px-6">
-            <EyebrowBadge>FOCUS PROTOCOL // BOOTING</EyebrowBadge>
-            <div className="h-px w-60 bg-white/10 md:w-80">
+          <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-background px-6">
+            <span className="font-serif italic text-accent text-lg">Curating the Magic...</span>
+            <div className="h-px w-60 bg-white/5 md:w-80">
               <div
-                className="h-full bg-accent transition-[width] duration-150 ease-out"
+                className="h-full bg-accent/60 transition-[width] duration-300 ease-out"
                 style={{ width: `${Math.round(loadProgress * 100)}%` }}
               />
             </div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-zinc-500">
-              Loading Prachii &nbsp;&middot;&nbsp; {Math.round(loadProgress * 100)}%
+            <p className="font-sans text-[11px] uppercase tracking-[0.28em] text-zinc-500">
+              {Math.round(loadProgress * 100)}%
             </p>
           </div>
         )}

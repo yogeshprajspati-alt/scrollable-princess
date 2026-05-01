@@ -1,7 +1,7 @@
-export const CINE_FRAME_COUNT = 169;
+export const CINE_FRAME_COUNT = 200;
 
 export const cineFramePath = (n: number) =>
-  `/frames2/frame_${String(n).padStart(4, "0")}.jpg`;
+  `/frames2/ezgif-frame-${String(n).padStart(3, "0")}.jpg`;
 
 export type Beat = {
   id: string;
@@ -18,28 +18,28 @@ export const BEATS: Beat[] = [
     id: "b1",
     show: 0.1,
     hide: 0.3,
-    label: "01 — Ignition",
-    quote: "Prachii ignites—one chapter at a time.",
+    label: "Chapter I — Grace",
+    quote: "Brave enough to dream, strong enough to achieve.",
     speaker: "Prachii",
-    film: "EXAM ARC — START",
+    film: "Infinite Radiance",
   },
   {
     id: "b2",
     show: 0.35,
     hide: 0.55,
-    label: "02 — Sync",
-    quote: "She studies, practices, and upgrades—confidence grows daily.",
+    label: "Chapter II — Resilience",
+    quote: "Every step you take is a masterpiece of resilience.",
     speaker: "Prachii",
-    film: "EXAM ARC — LOCK IN",
+    film: "Unstoppable Will",
   },
   {
     id: "b3",
     show: 0.6,
     hide: 0.8,
-    label: "03 — Aftermath",
-    quote: "Final revision. Full belief. Prachii finishes strong.",
+    label: "Chapter III — Serenity",
+    quote: "Radiance isn't just a look; it's the light you carry within.",
     speaker: "Prachii",
-    film: "EXAM ARC — WIN",
+    film: "Beyond Comparison",
   },
 ];
 

@@ -25,25 +25,37 @@ export function Navbar() {
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-8 md:py-5">
         <Link
           href="/"
-          className="flex items-center gap-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.32em] text-foreground"
+          className="flex items-center gap-2.5 font-serif text-[13px] font-semibold italic uppercase tracking-[0.2em] text-foreground"
         >
           <span
             aria-hidden
-            className="inline-block h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(212,162,47,0.9)]"
+            className="inline-block h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(234,188,203,0.8)]"
           />
-          Stark / Industries
+          Princess / Prachii
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           <a
-            href="#systems"
-            className="font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
+            href="#cinematic"
+            className="font-sans text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
           >
-            Systems
+            Vision
+          </a>
+          <a
+            href="#evolution"
+            className="font-sans text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
+          >
+            Growth
+          </a>
+          <a
+            href="#systems"
+            className="font-sans text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
+          >
+            Report
           </a>
           <a
             href="#footer"
-            className="font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
+            className="font-sans text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
           >
             Archive
           </a>
@@ -51,9 +63,9 @@ export function Navbar() {
 
         <a
           href="#systems"
-          className="group inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.05] px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:bg-white/[0.1] active:translate-y-[1px]"
+          className="group inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-5 py-2 font-sans text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-300 hover:bg-white/[0.08] active:translate-y-[1px]"
         >
-          Engage
+          Explore
           <ArrowUpRight
             size={14}
             weight="bold"

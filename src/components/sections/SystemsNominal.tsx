@@ -5,10 +5,10 @@ import { EyebrowBadge } from "@/components/ui/EyebrowBadge";
 import { AnimatedItem, AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const telemetry = [
-  { label: "Suit Integrity", value: "99.2%", note: "Nanoparticle lattice" },
-  { label: "Arc Output", value: "3.4 GJ/s", note: "Cold-fused, Vibranium core" },
-  { label: "Flight Ceiling", value: "72.8 km", note: "Stratospheric assist" },
-  { label: "Response Time", value: "0.018 s", note: "Neural link, J.A.R.V.I.S." },
+  { label: "Mindset Stability", value: "Optimal", note: "Calm & Resilient" },
+  { label: "Empathy Output", value: "Radiant", note: "Pure, Golden Heart" },
+  { label: "Ambition Peak", value: "Boundless", note: "Infinite Potential" },
+  { label: "Kindness Factor", value: "Pure", note: "Deeply Admired" },
 ];
 
 export function SystemsNominal() {
@@ -20,30 +20,31 @@ export function SystemsNominal() {
       <div className="mx-auto flex max-w-[1400px] flex-col gap-16 md:grid md:grid-cols-[5fr_4fr] md:gap-20">
         <AnimatedSection className="flex flex-col gap-8">
           <AnimatedItem>
-            <EyebrowBadge>J.A.R.V.I.S. // SYSTEMS NOMINAL</EyebrowBadge>
+            <span className="font-serif italic text-accent tracking-wide text-sm md:text-base">Final Report</span>
           </AnimatedItem>
           <AnimatedItem>
-            <h2 className="max-w-[16ch] font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl">
-              &ldquo;And I&hellip; am&hellip;{" "}
-              <span className="text-accent">Prachiiiee.</span>&rdquo;
+            <h2 className="max-w-[16ch] font-serif text-4xl font-semibold leading-[0.98] tracking-tight text-foreground md:text-6xl italic">
+              &ldquo;You are&hellip;
+              <br />
+              <span className="text-accent">Unstoppable.</span>&rdquo;
             </h2>
           </AnimatedItem>
           <AnimatedItem>
             <p className="max-w-[48ch] font-sans text-base leading-relaxed text-zinc-400 md:text-lg">
-              Feel the potential, tum haa tum bohot smart ho. Time km hone pe bhi calm hone se fayeda ye rahega ki hadbadahat nhi hogi. &mdash; chada nhi rha,
-              confidence de rha hu. I hope you like it. Andd... all those things are not just to impress you, this is for a strong woman whom I admire, sometimes strong lady need a gentle reminder of her strength, resilence and greatness, that's why I made this.
-              I really hope you win the war you don't talk about. The things you are silently fighting. 
-              I hope you win them all, and I hope you know that you are the bravest of the brave, the one and only Prachiiiee.
-              Darna nhi, ghabrana nhi, sab ho jayega. Go with the Flow! Enjoy the journey.
-
+              Feel the potential, you truly are remarkable. In moments of doubt, remember that your calm strength is your greatest asset. &mdash; this isn't just praise, it's the truth.
+              <br /><br />
+              I hope you know that you are the bravest of the brave, the one and only Prachiiiee.
+              Fear nothing, for you have everything within you to succeed. Go with the flow and enjoy every moment of your radiant journey!
+              The reason I said you are a princess and not a queen is that, a queen can have limitations, but a princess can do anything and everything she wants, literally anything. Queens are tough but princesses are soft and pretty.
+              Khushhhhhhhhhhhhhhhhh Ab bohot acche se exam dena, sab accha hota h jab aapka mn khush hota h. Bhaad me jaaye sab, bas khush raho tum.
             </p>
           </AnimatedItem>
           <AnimatedItem>
             <a
               href="#footer"
-              className="group inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:bg-white/[0.08] active:translate-y-[1px]"
+              className="group inline-flex items-center gap-2 self-start rounded-full border border-white/10 bg-white/[0.04] px-6 py-3 font-sans text-[12px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-300 hover:bg-white/[0.08] active:translate-y-[1px]"
             >
-              Open Suit Archive
+              The Archive
               <ArrowUpRight
                 size={14}
                 weight="bold"
@@ -53,19 +54,19 @@ export function SystemsNominal() {
           </AnimatedItem>
         </AnimatedSection>
 
-        <AnimatedSection className="flex flex-col divide-y divide-white/8 border-t border-white/8 font-mono md:mt-3">
+        <AnimatedSection className="flex flex-col divide-y divide-white/5 border-t border-white/5 font-sans md:mt-3">
           {telemetry.map((row) => (
             <AnimatedItem key={row.label}>
-              <div className="flex items-baseline justify-between gap-6 py-5">
+              <div className="flex items-baseline justify-between gap-6 py-6">
                 <div className="flex flex-col gap-1">
-                  <span className="text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+                  <span className="font-serif italic text-[11px] tracking-wider text-accent">
                     {row.label}
                   </span>
                   <span className="font-sans text-[13px] text-zinc-400">
                     {row.note}
                   </span>
                 </div>
-                <span className="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+                <span className="font-serif text-2xl font-semibold tracking-tight text-foreground md:text-3xl italic">
                   {row.value}
                 </span>
               </div>

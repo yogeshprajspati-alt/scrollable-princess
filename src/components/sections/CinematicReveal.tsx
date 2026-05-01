@@ -209,77 +209,64 @@ export function CinematicReveal() {
           }}
         />
 
-        <div className="pointer-events-none absolute left-6 top-24 text-accent md:left-10 md:top-28">
-          <HudFrame corner="tl" size={26} />
-        </div>
-        <div className="pointer-events-none absolute right-6 top-24 text-accent md:right-10 md:top-28">
-          <HudFrame corner="tr" size={26} />
-        </div>
-        <div className="pointer-events-none absolute bottom-14 left-6 text-accent md:bottom-16 md:left-10">
-          <HudFrame corner="bl" size={26} />
-        </div>
-        <div className="pointer-events-none absolute bottom-14 right-6 text-accent md:bottom-16 md:right-10">
-          <HudFrame corner="br" size={26} />
-        </div>
-
         <div className="pointer-events-none absolute right-6 top-28 z-10 flex max-w-[46ch] flex-col items-end gap-5 text-right md:right-12 md:top-32">
-          <EyebrowBadge>PRACHII // FINAL FRAME</EyebrowBadge>
+          <span className="font-serif italic text-accent tracking-wide text-sm md:text-base">The Final Vision</span>
           <div className="relative self-stretch">
             <h2
               ref={h2InevitableRef}
-              className="font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl lg:text-7xl"
+              className="font-serif text-4xl font-semibold leading-[0.98] tracking-tight text-foreground md:text-6xl lg:text-7xl"
               style={{ transition: "opacity 240ms ease-out" }}
             >
-              I am
+              Purely
               <br />
-              <span className="text-accent">Inevitable.</span>
+              <span className="text-accent">Elegance.</span>
             </h2>
             <h2
               ref={h2IronManRef}
-              className="absolute inset-0 font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl lg:text-7xl"
+              className="absolute inset-0 font-serif text-4xl font-semibold leading-[0.98] tracking-tight text-foreground md:text-6xl lg:text-7xl"
               style={{ opacity: 0, transition: "opacity 240ms ease-out" }}
             >
-              And I am
+              Beyond
               <br />
-              <span className="text-accent">Prachii.</span>
+              <span className="text-accent">Compare.</span>
             </h2>
           </div>
           <p className="max-w-[42ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
-            Endgame mindset. Prachii holds the last frame—so you can rebuild with confidence and finish strong.
+            Grace in every movement. Prachii defines her own path — where confidence meets serenity.
           </p>
         </div>
 
         <div className="pointer-events-none absolute left-6 top-20 z-10 flex items-center gap-2 md:left-10 md:top-24">
-          <div className="h-px w-8 bg-accent/60" />
-          <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-zinc-400">
-            Flight Log &mdash; Archived
+          <div className="h-px w-8 bg-accent/40" />
+          <span className="font-sans text-[10px] uppercase tracking-[0.32em] text-zinc-500">
+            Vision Log &mdash; Radiant
           </span>
         </div>
 
         <div className="pointer-events-none absolute right-6 top-20 z-10 flex items-center gap-3 md:right-10 md:top-24">
           <span
             ref={seqReadoutRef}
-            className="font-mono text-[10px] uppercase tracking-[0.28em] text-accent"
+            className="font-sans text-[10px] uppercase tracking-[0.28em] text-accent font-medium"
           >
             SEQ 001 / {CINE_FRAME_COUNT}
           </span>
           <span
             aria-hidden
-            className="inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_10px_rgba(212,162,47,0.85)]"
+            className="inline-block h-1.5 w-1.5 rounded-full bg-accent/80"
           />
         </div>
 
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10">
-          <div className="mx-6 mb-3 h-px bg-white/10 md:mx-10">
+          <div className="mx-6 mb-3 h-px bg-white/5 md:mx-10">
             <div
               ref={progressFillRef}
-              className="h-full origin-left bg-accent"
+              className="h-full origin-left bg-accent/60"
               style={{ transform: "scaleX(0)", transition: "transform 80ms linear" }}
             />
           </div>
-          <div className="mx-6 flex items-center justify-between pb-4 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
-            <span>PRACHIII // THE BEST</span>
-            <span>H.A.N.N.A.H // PLAYBACK</span>
+          <div className="mx-6 flex items-center justify-between pb-4 font-sans text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
+            <span>PRACHIII // RADIANCE</span>
+            <span>VISION // PLAYBACK</span>
             <span>Scroll &darr;</span>
           </div>
         </div>
@@ -298,19 +285,20 @@ export function CinematicReveal() {
               className={`pointer-events-none absolute ${position} z-20 hidden w-[420px] max-w-[90vw] md:block`}
             >
               <figure
-                className={`card-surface pointer-events-auto p-6 transition-all duration-400 ease-out ${
-                  visible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
+                className={`card-surface pointer-events-auto p-8 transition-all duration-700 ease-out ${
+                  visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                 }`}
+                style={{ borderRadius: "24px", background: "rgba(255, 255, 255, 0.03)", border: "1px solid rgba(234, 188, 203, 0.1)" }}
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
+                <span className="font-serif italic text-sm tracking-wide text-accent">
                   {b.label}
                 </span>
-                <blockquote className="mt-3 font-sans text-xl font-medium leading-snug tracking-tight text-foreground">
+                <blockquote className="mt-4 font-serif text-2xl font-medium leading-snug tracking-tight text-foreground italic">
                   &ldquo;{b.quote}&rdquo;
                 </blockquote>
-                <figcaption className="mt-4 flex items-center justify-between">
-                  <span className="font-sans text-sm text-zinc-300">{b.speaker}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400">
+                <figcaption className="mt-6 flex items-center justify-between">
+                  <span className="font-sans text-sm text-zinc-400">{b.speaker}</span>
+                  <span className="font-serif italic text-xs text-accent">
                     {b.film}
                   </span>
                 </figcaption>
@@ -319,25 +307,26 @@ export function CinematicReveal() {
           );
         })}
 
-        <div className="pointer-events-none absolute inset-x-0 top-[36%] z-20 flex flex-col gap-3 px-6 md:hidden">
+        <div className="pointer-events-none absolute inset-x-0 top-[36%] z-20 flex flex-col gap-4 px-6 md:hidden">
           {BEATS.map((b) => {
             const visible = visibleBeats.has(b.id);
             return (
               <figure
                 key={b.id}
-                className={`card-surface pointer-events-auto p-5 transition-all duration-400 ease-out ${
-                  visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+                className={`card-surface pointer-events-auto p-6 transition-all duration-700 ease-out ${
+                  visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
                 }`}
+                style={{ borderRadius: "20px", background: "rgba(255, 255, 255, 0.03)", border: "1px solid rgba(234, 188, 203, 0.1)" }}
               >
-                <span className="font-mono text-[9px] uppercase tracking-[0.28em] text-accent">
+                <span className="font-serif italic text-xs tracking-wide text-accent">
                   {b.label}
                 </span>
-                <blockquote className="mt-2 font-sans text-base font-medium leading-snug text-foreground">
+                <blockquote className="mt-3 font-serif text-lg font-medium leading-snug text-foreground italic">
                   &ldquo;{b.quote}&rdquo;
                 </blockquote>
-                <figcaption className="mt-3 flex items-center justify-between">
+                <figcaption className="mt-4 flex items-center justify-between">
                   <span className="font-sans text-xs text-zinc-300">{b.speaker}</span>
-                  <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-zinc-400">
+                  <span className="font-serif italic text-[10px] text-accent">
                     {b.film}
                   </span>
                 </figcaption>
@@ -348,32 +337,32 @@ export function CinematicReveal() {
 
         <div
           ref={outroRef}
-          className="pointer-events-none absolute bottom-24 right-6 z-10 flex flex-col items-end gap-4 md:bottom-32 md:right-12"
+          className="pointer-events-none absolute bottom-24 right-6 z-10 flex flex-col items-end gap-5 md:bottom-32 md:right-12"
           style={{ opacity: 0, transition: "opacity 80ms linear" }}
         >
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
-            Next &mdash; finish strong
+          <span className="font-serif italic text-sm tracking-wide text-accent">
+            Next &mdash; Pure Transformation
           </span>
           <a
-            href="#systems"
-            className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-5 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:bg-white/[0.12] active:translate-y-[1px]"
+            href="#evolution"
+            className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-6 py-3 font-sans text-[12px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-300 hover:bg-white/[0.08] active:translate-y-[1px]"
           >
-            Open diagnostics
+            Continue Journey
             <span aria-hidden>&darr;</span>
           </a>
         </div>
 
         {!loaded && (
-          <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-5 bg-background px-6">
-            <EyebrowBadge>FLIGHT LOG // RESTORING</EyebrowBadge>
-            <div className="h-px w-60 bg-white/10 md:w-80">
+          <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-background px-6">
+            <span className="font-serif italic text-accent text-lg">Unfolding Grace...</span>
+            <div className="h-px w-60 bg-white/5 md:w-80">
               <div
-                className="h-full bg-accent transition-[width] duration-150 ease-out"
+                className="h-full bg-accent/60 transition-[width] duration-300 ease-out"
                 style={{ width: `${Math.round(loadProgress * 100)}%` }}
               />
             </div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-zinc-500">
-              Rendering Mark III &nbsp;&middot;&nbsp; {Math.round(loadProgress * 100)}%
+            <p className="font-sans text-[11px] uppercase tracking-[0.28em] text-zinc-500">
+              {Math.round(loadProgress * 100)}%
             </p>
           </div>
         )}
